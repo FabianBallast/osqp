@@ -242,7 +242,7 @@ if(OSQP_ALGEBRA_CUDA)
   enable_language(CUDA)
   message(STATUS "CUDA LANGUAGE ENABLED")
   find_package(CUDA)
-  mmessage(STATUS "CUDA LANGUAGE FOUND")
+  message(STATUS "CUDA LANGUAGE FOUND")
   # cublas and cusparse headers
   include_directories(${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
 
