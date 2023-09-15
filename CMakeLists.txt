@@ -249,12 +249,12 @@ if(OSQP_ALGEBRA_CUDA)
 
   # sm_75 -> Turing support
   if(OSQP_USE_FLOAT)
-    set(CMAKE_CUDA_ARCHITECTURES 52 75)
+    set(CMAKE_CUDA_ARCHITECTURES 52 75 86)
     message(STATUS "Using floats for CUDA")
     # set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --gpu-architecture=compute_52 --gpu-code=sm_52,sm_75")
   else()
     # To use doubles we need compute capability 6.0 for atomic operations
-    set(CMAKE_CUDA_ARCHITECTURES 60 75)
+    set(CMAKE_CUDA_ARCHITECTURES 60 75 86)
     message(STATUS "Using doubles for CUDA")
     # set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --gpu-architecture=compute_60 --gpu-code=sm_60,sm_75")
   endif()
