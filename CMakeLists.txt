@@ -238,7 +238,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configure/osqp_configure.h.in
 # CUDA support
 # ----------------------------------------------
 if(OSQP_ALGEBRA_CUDA)
-  message(STATUS "STARTING WITH CUDA"}
+  message(STATUS "STARTING WITH CUDA")
   enable_language(CUDA)
   message(STATUS "CUDA LANGUAGE ENABLED")
   find_package(CUDA)
